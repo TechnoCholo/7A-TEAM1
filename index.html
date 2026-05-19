@@ -1,74 +1,89 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Básica con Barra de Navegación</title>
+    <title>Bones Website</title>
+
     <style>
         body {
-            font-family: Courier, monospace;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #000033;
-            font-family: Courier, monospace;
-            outline: 5px dotted white;
-            color: white;
             text-align: center;
-            padding: 3em 0;
         }
+
         nav {
-            background-color: #000066;
-            text-align: center;
+            background-color: #333;
+            padding: 15px;
         }
+
         nav a {
-            display: inline-block;
             color: white;
-            text-align: center;
-            padding: 14px 20px;
             text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
         }
-        nav a:hover {
-            background-color: #111;
+
+        h1 {
+            color: #222;
         }
-         footer {
-            background-color: #191970;
-            color: #fff;
-            text-align: center;
+
+        .container {
             padding: 20px;
-            margin-top: 20px;
+        }
+
+        .bone-card {
+            background-color: white;
+            width: 250px;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Team 1 PROJECT</h1>
-        <h4>Reading & Technology Project</h4>
-    </header>
-    <header>
+
+    <!-- Navigation Bar -->
     <nav>
-        <a href="The Metamorphosis of Prime Intellect (1).png">Marlen</a>
-        <a href="Poster Paso a Paso Papel Periodico Vintage Floral Beige (1).png">Daniel</a>
-        <a href="I, Robot.png">Isabella </a>
-        <a href="Cartel Biografía Collage Doodle Melocotón y Beige .png">Natalia</a>
-        <a href="book Review.png">Mauro</a>
+        <a href="#">Home</a>
+        <a href="#">Types of Bones</a>
+        <a href="#">Functions</a>
+        <a href="#">Fun Facts</a>
     </nav>
 
-    <main>
-        <section id="home">
-            <h2>What did we do for english?</h2>
-            <p>For our english project we did the posters that appear when you click our names.</p>
-        </section>
-        <section id="services">
-            <h2>What did we do for technology?</h2>
-            <p>For our technology project, we did the page that you are seeing right now. </p>
-    </main>
+    <div class="container">
 
+        <h1>The Human Skeleton</h1>
 
-    <footer>
-        <p>&copy; Team 1 2024</p>
-    </footer>
+        <p>Bones help support and protect the human body.</p>
+
+        <!-- Bone Example 1 -->
+        <div class="bone-card">
+            <h2>Skull</h2>
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Human_skull_front_simplified.png" alt="Skull">
+
+            <p>The skull protects the brain.</p>
+        </div>
+
+        <!-- Bone Example 2 -->
+        <div class="bone-card">
+            <h2>Femur</h2>
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Femur_front.png" alt="Femur Bone">
+
+            <p>The femur is the longest bone in the body.</p>
+        </div>
+
+    </div>
+
 </body>
 </html>
